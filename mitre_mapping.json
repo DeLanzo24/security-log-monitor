@@ -1,0 +1,44 @@
+{
+  "FAILED_LOGIN": {
+    "technique_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "severity": "Medium",
+    "description": "Repeated or suspicious failed authentication attempts may indicate password guessing or credential attacks."
+  },
+  "MULTIPLE_FAILED_LOGINS": {
+    "technique_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "severity": "High",
+    "description": "Multiple failed login attempts from the same source or against the same user may indicate an active brute force attempt."
+  },
+  "POWERSHELL_EXECUTION": {
+    "technique_id": "T1059.001",
+    "technique_name": "PowerShell",
+    "tactic": "Execution",
+    "severity": "High",
+    "description": "PowerShell can be used by attackers to execute commands, download tools, or run scripts during an intrusion."
+  },
+  "NEW_USER_CREATED": {
+    "technique_id": "T1136",
+    "technique_name": "Create Account",
+    "tactic": "Persistence",
+    "severity": "High",
+    "description": "Unexpected account creation may indicate an attacker attempting to maintain access to a system."
+  },
+  "SUSPICIOUS_DOWNLOAD": {
+    "technique_id": "T1105",
+    "technique_name": "Ingress Tool Transfer",
+    "tactic": "Command and Control",
+    "severity": "Medium",
+    "description": "Suspicious downloads may indicate an attacker transferring tools or payloads into an environment."
+  },
+  "PRIVILEGE_CHANGE": {
+    "technique_id": "T1098",
+    "technique_name": "Account Manipulation",
+    "tactic": "Persistence",
+    "severity": "High",
+    "description": "Privilege or group membership changes may indicate an attempt to strengthen access or maintain persistence."
+  }
+}
